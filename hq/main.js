@@ -1,13 +1,13 @@
 const { Client } = require('discord.js-selfbot-v13');
 const client = new Client();
 
-client.login('ODQ0NjQxMDQ3MTQ5MjgxMjkw.GxyxaY.aznwknI2_6eySAUh0f2O6JttFVH8ZA-YY2LVPs');
+client.login('');
 
 client.on('ready', async () => {
   console.log(`${client.user.username} hazır loga cikabilirsin aslan cirak`);
 });
 
-const allowedChannelId = '1307390301488287769';
+const allowedChannelId = '';
 
 client.on('messageCreate', async (message) => {
   if (message.channel.id !== allowedChannelId || message.author.id !== client.user.id) return;
