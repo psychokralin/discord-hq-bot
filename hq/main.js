@@ -1,13 +1,13 @@
 const { Client } = require('discord.js-selfbot-v13');
 const client = new Client();
 
-client.login('');
+client.login('');  TOKEN BURAYA
 
 client.on('ready', async () => {
   console.log(`${client.user.username} hazır loga cikabilirsin aslan cirak`);
 });
 
-const allowedChannelId = '';
+const allowedChannelId = '';  HANGİ KANALDA ÇALIŞACAK? KANAL ID
 
 client.on('messageCreate', async (message) => {
   if (message.channel.id !== allowedChannelId || message.author.id !== client.user.id) return;
